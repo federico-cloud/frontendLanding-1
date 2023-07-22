@@ -31,7 +31,7 @@ body{
         background-image: url('../images/Rectangle.svg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 480px;
+        height: 500px;
     }
     
     header{
@@ -59,15 +59,15 @@ body{
         border-bottom: 3px solid var(--green);
     }
 
-    .firstSection article{
+    .firstSection .hero{
         display: flex;
         flex-direction: column;
-        margin: 64px auto;
+        margin: 70px auto 0 auto;
         width: 100%;
         align-items: center;
     }
 
-    .firstSection article h1{
+    .firstSection .hero h1{
         color: var(--white);
         font-family: var(--heading-font);
         font-size: 50px;
@@ -102,7 +102,40 @@ body{
     }
 
     .firstSection .hero img{
+        margin-top: 64px;
         width: 85%;
-        margin-top: 64px
     }
+
+    .objectives{
+        margin: 160px 16px 0 16px;
+        text-align: center;
+    }
+
+    .objectives .objective-number{
+        border-radius: 50%;
+        border: 1px solid var(--grey);
+        color: var(--dark-purple);
+        display: inline-block;
+        font-family: var(--heading-font);
+        font-size: 20px;
+        height: 48px;
+        margin-bottom: 24px;
+        padding: 10px;
+        width: 48px;
+    }
+
+    .objectives .objective-title{
+        color: var(--dark-purple);
+        font-family: var(--heading-font);
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .objectives .objective-paragraph{
+        font-family: var(--body-font);
+        font-weight: 400;
+        color: var(--grey);
+        margin-bottom: 40px;
+    }
+
 }
