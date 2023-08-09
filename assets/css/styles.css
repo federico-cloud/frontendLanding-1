@@ -25,6 +25,27 @@ body{
     font-weight: bold;
 }
 
+button{
+    width: 130px;
+    margin-top: 40px;
+    height: 55px;
+    background-color: var(--green);
+    border: none;
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+
+button:hover{
+    color: var(--green);
+    border: 2px solid var(--green);
+    font-weight: bold;
+    background-color: var(--dark-purple);
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 375px){
 
     .firstSection{
@@ -80,34 +101,13 @@ body{
         text-decoration: underline 3px var(--green);
     }
 
-    .firstSection .hero button{
-        width: 130px;
-        margin-top: 40px;
-        height: 55px;
-        background-color: var(--green);
-        border: none;
-        font-family: var(--body-font);
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all ease-in-out .5s;
-    }
-
-    .firstSection .hero button:hover{
-        color: var(--green);
-        border: 2px solid var(--green);
-        font-weight: bold;
-        background-color: var(--dark-purple);
-        cursor: pointer;
-    }
-
     .firstSection .hero img{
         margin-top: 64px;
         width: 85%;
     }
 
     .objectives{
-        margin: 160px 16px 0 16px;
+        margin: 160px 16px 400px 16px;
         text-align: center;
     }
 
@@ -132,10 +132,82 @@ body{
     }
 
     .objectives .objective-paragraph{
+        color: var(--grey);
         font-family: var(--body-font);
         font-weight: 400;
-        color: var(--grey);
         margin-bottom: 40px;
+    }
+
+    .founder{
+        background-color: var(--dark-purple);
+        margin: 0 auto 74px auto;
+        padding-bottom: 32px;
+        position: relative;
+        text-align: center;
+        width: 90%;
+    }
+
+    .founder .founder-img{
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: -560px;
+        width: 80%;
+        z-index: -1;
+    }
+
+    .founder .founder-desc h3{
+        color: var(--white, #FFF);
+        font-family: var(--heading-font);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        margin-bottom: 16px;
+        padding-top: 32px;
+        text-align: center;
+    }
+
+    .founder .founder-desc p{
+        color: var(--white, #FFF);
+        font-family: var(--body-font);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 0 auto 16px auto;
+        padding: 0 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .founder button{
+        letter-spacing: 0px;
+        padding: 12px 22px;
+        width: 175px;
+    }
+
+    footer{
+        height: 100px;
+        margin: 0 auto 65px auto;
+        position: relative;
+        text-align: center;
+        width: 115px;
+    }
+
+    footer .footer-social{
+        align-items: baseline;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+    }
+
+    footer .footer-social img{
+        cursor: pointer;
     }
 
 }
